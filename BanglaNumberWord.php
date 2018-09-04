@@ -65,6 +65,7 @@ class BanglaNumberWord
         $string = '';
         if ($this->number < 0) {
             $string = $this->negative;
+            $this->number = abs($this->number);
         }
         $number = explode('.', $this->number);
         if (count($number) == 1) {
