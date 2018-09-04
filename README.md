@@ -2,6 +2,11 @@
 Numbers to Words Converter (Bangla). এটি একটি পিএইচপি ক্লাস যা সংখ্যাকে কথায় পরিনত করে। 
 [Live Demo](https://saiful.im/n2w.php)
 
+## Installation
+
+```
+composer require saaiful/bangla-number-word
+```
 
 ## Usage
 ```php
