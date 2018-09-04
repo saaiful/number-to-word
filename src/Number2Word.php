@@ -183,8 +183,11 @@ class Number2Word
         $string = '';
         if ($this->number < 0) {
             $string = $this->negative;
+            $this->number = abs($this->number);
         }
+
         $number = explode('.', $this->number);
+
         if (count($number) == 1) {
             $string .= $this->_separator($number[0]);
         } elseif (count($number) == 2) {
