@@ -5,12 +5,15 @@ Numbers to Words Converter (Bangla). এটি একটি পিএইচপ�
 
 ## Usage
 ```php
-$n = new BanglaNumberWord($number);
-return $n->word();
+use Saaiful\Bangla\Number2Word;
+
+$bangla = new Number2Word(324650);
+
+echo $bangla->word();
 ```
 or
 
 ```php
-n2w($number);
+echo n2w($number);
 ```
 
