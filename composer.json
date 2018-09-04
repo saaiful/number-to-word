@@ -1,0 +1,33 @@
+{
+  "name": "saaiful/bangla-number-word",
+  "description": "Numbers to Words Converter (Bangla)",
+  "keywords": ["bangla", "word", "number", "converter"],
+  "homepage": "https://github.com/saaiful/number-to-word",
+  "type": "Library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Saiful Islam",
+      "email": "me@saiful.im"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8 || ^5.0",
+    "symfony/var-dumper": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Saaiful\\Bangla\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Saaiful\\Bangla\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
