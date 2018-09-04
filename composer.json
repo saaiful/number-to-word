@@ -26,7 +26,5 @@
         "psr-4": {
             "Saaiful\\NumberToWord\\Tests\\": "tests/"
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
