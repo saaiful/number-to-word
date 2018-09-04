@@ -2,15 +2,23 @@
 Numbers to Words Converter (Bangla). এটি একটি পিএইচপি ক্লাস যা সংখ্যাকে কথায় পরিনত করে। 
 [Live Demo](https://saiful.im/n2w.php)
 
+## Installation
+
+```
+composer require saaiful/bangla-number-word
+```
 
 ## Usage
 ```php
-$n = new BanglaNumberWord($number);
-return $n->word();
+use Saaiful\Bangla\Number2Word;
+
+$bangla = new Number2Word(324650);
+
+echo $bangla->word();
 ```
 or
 
 ```php
-n2w($number);
+echo n2w($number);
 ```
 
