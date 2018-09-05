@@ -56,14 +56,16 @@ class Word
             } else {
                 $string = $this->separator($units[0]) . ' ' . $this->dictionary[100000];
             }
-        } elseif ($number > 1) {
-            $units = explode('.', sprintf('%0.2f', $number / 10000000));
-            $left = $number % 10000000;
+        } elseif ($number < 1000000000000000000) {
+            $units = explode('.', $number / 10000000);
+            $left = ($number % 10000000);
             if ($left > 0) {
                 $string = $this->separator($units[0]) . ' ' . $this->dictionary[10000000] . ' ' . $this->separator($left);
             } else {
                 $string = $this->separator($units[0]) . ' ' . $this->dictionary[10000000];
             }
+        } else {
+            $string = 'এই সংখ্যা কথায় প্রকাশ করা যাচ্ছে না';
         }
         return $string;
     }

@@ -61,4 +61,9 @@ class WordTest extends TestCase
         $this->assertEquals('দশ হাজার', n2w(10000));
     }
 
+    public function testMinMaxRange()
+    {
+        $this->assertEquals('শূন্য', n2w(0));
+        $this->assertEquals('এই সংখ্যা কথায় প্রকাশ করা যাচ্ছে না', n2w(1000000000000000000));
+    }
 }
