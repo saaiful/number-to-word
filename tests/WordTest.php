@@ -44,7 +44,10 @@ class WordTest extends TestCase
     public function testDecimal()
     {
         $test = new Word(10.55);
-        $this->assertEquals('দশ দশমিক পঞ্চান্ন', $test->word());
+        $this->assertEquals('দশ দশমিক পাঁচ পাঁচ', $test->word());
+
+        $test = new Word(10.01);
+        $this->assertEquals('দশ দশমিক শূন্য এক', $test->word());
     }
 
     public function testSeparator()
