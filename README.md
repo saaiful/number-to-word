@@ -6,7 +6,7 @@
 ## Installation
 
 ```
-composer require saaiful/bangla-number-word
+composer require saaiful/number-to-word
 ```
 or
 ```
