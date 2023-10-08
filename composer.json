@@ -3,7 +3,6 @@
     "description": "Numbers to Words Converter (Bangla)",
     "keywords": ["bangla", "word", "number", "converter"],
     "homepage": "https://github.com/saaiful/number-to-word",
-    "type": "Library",
     "license": "MIT",
     "authors": [{
         "name": "Saiful Isalm",

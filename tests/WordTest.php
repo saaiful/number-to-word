@@ -19,6 +19,10 @@ class WordTest extends TestCase
 
     public function testNinetyNineToManyCr()
     {
+
+        $test = new Word(10000);
+        $this->assertEquals('দশ হাজার', $test->word());
+
         $test = new Word(1234567890);
         $this->assertEquals('একশত তেইশ কোটি পঁয়তাল্লিশ লক্ষ সাতষট্টি হাজার আটশত নব্বই', $test->word());
 
